@@ -1,5 +1,6 @@
 require_relative "tile"
 
+
 class Board
   def self.empty_grid
     Array.new(9) do
@@ -23,7 +24,7 @@ class Board
 
   def [](pos)
     x, y = pos
-    grid[x][y]
+    @grid[x][y]
   end
 
   def []=(pos, value)

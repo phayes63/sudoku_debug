@@ -48,9 +48,9 @@ class SudokuGame
 
   def play_turn
     board.render
-    val = get_pos
-    pos = get_val
-    board[pos] = val
+    pos = get_pos
+    val = get_val
+    @board[pos] = val
   end
 
   def run
@@ -74,7 +74,7 @@ class SudokuGame
       val.between?(0, 9)
   end
 
-  private
+  # private
   attr_reader :board
 end
 
